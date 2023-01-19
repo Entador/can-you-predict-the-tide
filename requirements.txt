@@ -1,0 +1,5 @@
+numpy >= 1.24  # numerical python
+pandas >= 1.5  # data analysis
+
+ipykernel >= 6.20    # jupyter kernel
+scikit-learn >= 1.2  # machine learning
