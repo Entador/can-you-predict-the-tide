@@ -1,7 +1,6 @@
 """Custom metric for surge prediction challenge."""
 
 import numpy as np
-import pandas as pd
 
 __all__ = ['surge_prediction_metric']
 
@@ -28,6 +27,7 @@ def surge_prediction_metric(dataframe_y_true: pd.DataFrame, dataframe_y_pred: pd
 
 # The following lines show how the csv files are read
 if __name__ == '__main__':
+  import pandas as pd
   CSV_FILE_Y_TRUE = 'Y_train.csv'  # path of the y_true csv file
   CSV_FILE_Y_PRED = 'Y_train0.csv'  # path of the y_pred csv file
   df_y_true = pd.read_csv(CSV_FILE_Y_TRUE, index_col=0, sep=',')
